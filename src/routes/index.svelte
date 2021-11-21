@@ -1,2 +1,26 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+import Navbar from '$lib/Navbar.svelte';
+import Greeting from '$lib/Greeting.svelte';
+import Entry from '$lib/Entry.svelte';
+</script>
+<Navbar pageCurrent={"Home"} /><slot />
+<Greeting />
+
+<!-- Entries -->
+<section class="container px-4 py-3">
+    <div class="d-flex justify-content-between">
+   	 <div class="p-2">Mood Log</div>
+   	 <input class="btn btn-light mb-2" type="button" value="+ New Entry" />
+    </div>
+
+    <div class="list-group mb-3">
+   	 <!-- Individual Entries -->
+    	<Entry />
+   	 
+    </div>
+</section>
+
+
+<style>
+
+</style>
