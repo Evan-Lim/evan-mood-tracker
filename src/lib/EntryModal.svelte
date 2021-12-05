@@ -121,7 +121,7 @@ on:click={() => {
     emoji = emojiList.best;
 }}
 />
-<label class="btn btn-outline-danger" for="best">Best</label>
+<label class="btn btn-outline-success" for="best">Best</label>
 
 
    </div>
